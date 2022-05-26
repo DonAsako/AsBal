@@ -44,6 +44,7 @@ a, h1, h2, h3, h4, h5, h6, p, th, td {
 .Navbar-item--link {
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: 700;
 }
 .Navbar-item--link:hover::after
 {
@@ -131,4 +132,13 @@ a, h1, h2, h3, h4, h5, h6, p, th, td {
 
 .statement-out {
     color: #D32F2F;
+}
+
+.graphics-wrappper {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-wrapper {
+    padding: 1em;
 }
