@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #2196F3;
+}
+
+
+a, h1, h2, h3, h4, h5, h6, p, th, td {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Navbar-logo {
+    text-decoration: none;
+}
+
+.Navbar-logo--link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.Navbar-items {
+    display: flex;
+    list-style: none; 
+}
+
+.Navbar-item {
+    padding: .5em;
+}
+
+.Navbar-item--link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.Navbar-item--link:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: left;
+} 
+.Navbar-item--link::after {
+    content: "";
+    display: block;
+    transition: .3s transform;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.section {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-color);
+
+}
+
+.section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+
+.bal-number {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 40px;
+    text-align: center;
+}
+
+.bal-number::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 10%;
+    margin-top: 10px;
+}
+.section-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.statement-table {
+    width: 100%;
+    margin: 40px;
+    border: 0;
+    border-collapse: collapse;
+}
+
+.statement-table--head th {
+    padding: 1em;
+    border-bottom: 1px solid var(--primary-color);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.statement-table--body td {
+    padding: 1em;
+    text-align: center;
+}
+
+.statement-table--row {
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+.statement-title, .statement-type, .statement-date, .statement-price, .statement-edit {
+    font-weight: bold;
+}
+.statement-entry {
+    color: #388E3C;
+}
+.statement-edit {
+    color: grey;
+}
+
+.statement-out {
+    color: #D32F2F;
+}
